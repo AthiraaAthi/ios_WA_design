@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:ios_wa_ui/view/home_screen/home_screen.dart';
+import 'package:ios_wa_ui/view/nav_screen/nav_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
+    return CupertinoApp(
       theme: CupertinoThemeData(scaffoldBackgroundColor: CupertinoColors.black),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: NavScreen(),
     );
   }
 }
