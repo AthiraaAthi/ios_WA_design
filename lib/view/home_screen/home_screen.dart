@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import 'package:ios_wa_ui/utils/color_constant/color_constant.dart';
+import 'package:ios_wa_ui/view/chat_screen/chat_screen.dart';
 import 'package:ios_wa_ui/view/sttings_screen/settings_screen.dart';
 import 'package:ios_wa_ui/widgets/bottom_nav_widget.dart';
 import 'package:ios_wa_ui/widgets/list_tile_widgets.dart';
@@ -112,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Navigator.push(
                               context,
                               CupertinoPageRoute(
-                                builder: (context) => SettingsScreen(),
+                                builder: (context) => ChatScreen(),
                               ));
                         },
                         time: "12:10 pm",
